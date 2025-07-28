@@ -1,1 +1,306 @@
-
+<?xml version="1.0" encoding="UTF-8"?><project name="Gestion_Projet" company="" webLink="http://" view-date="2025-03-18" view-index="0" gantt-divider-location="366" resource-divider-location="300" version="3.3.3316" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="199" order="0"/>
+        <field id="tpd4" name="Date de début" width="75" order="1"/>
+        <field id="tpd5" name="Date de fin" width="76" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#6600cc #ff99ff #ccffcc #ffffcc #ffccff #ccccff #ff3333 #00ffcc #ffff00 #e1e1e1]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="e6525bb61d7648688a80449266d9168b" name="Annonce du voyage" color="#ff6666" meeting="false" start="2025-03-24" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Connaître nb de participants intéressés]]></notes>
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="3" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="2" uid="b474b75a1e3f44e2874f33403169c7d4" name="Réponse des participants" meeting="false" start="2025-03-25" duration="3" complete="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" uid="49abded3c76341219b4578eaafe9ce01" name="Comparaison possibilités de repas" color="#ccffcc" meeting="false" start="2025-03-26" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : une ou plusieurs possibilité(s) de fournir des repas
+]]></notes>
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" uid="1f1a41aa1cd74d278e493d0ebf81ae09" name="Sélection possibilités de repas" color="#ccffcc" meeting="false" start="2025-03-28" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : un ou plusieurs choix de fournisseur de repas pour la réunion d'équipe]]></notes>
+            <depend id="16" type="2" difference="0" hardness="Rubber"/>
+            <depend id="38" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="503c359f6e1f4f06a18b9b222e67a194" name="Réunion d'informations (visio/présentiel)" color="#6600ff" meeting="false" start="2025-03-28" duration="1" complete="0" priority="2" expand="true">
+            <notes><![CDATA[Présentation du voyage, participation financière, objectifs
+Nombre de participants confirmé, contraintes de chacun 
+]]></notes>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="17" uid="82ec27d675384576961fbbb0e6e4fb1b" name="Demande de doc/infos supplémentaires" meeting="false" start="2025-04-04" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrable : Google Form
+Rappel d'envoyer les premiers documents nécessaires
+]]></notes>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" uid="d6424186f6ac461fb98e6f82984969a8" name="Envoi des doc/infos supplémentaires" color="#8cb6ce" meeting="false" start="2025-04-07" duration="3" complete="0" expand="true">
+            <depend id="24" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="19" uid="21b598cf927341c59589cacfc25a1674" name="Réservation hébergement" color="#ccccff" meeting="false" start="2025-04-08" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrable : hébergement réservé]]></notes>
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+            <depend id="27" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="36" uid="4cd052ae6dd9482e8dd492d39ac4a038" name="Négociation transport aller-retour" color="#ffccff" meeting="false" start="2025-04-04" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : négocier le prix du transport choisi]]></notes>
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="20" uid="3bbff56e33544ea28f6d1b70448ee83a" name="Réservation transport aller-retour" color="#ffccff" meeting="false" start="2025-04-08" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrable : transport aller-retour réservé]]></notes>
+            <depend id="27" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="21" uid="3b4d94afef3f4ca7b3ba421276fa5928" name="Réservation activités" color="#ffffcc" meeting="false" start="2025-04-08" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrables : 
+2 activités/jour pour 5 jours réservés et 1 activité le soir réservée
+Organiser les activités et les déplacements du groupe pour optimiser l'utilisation du transport sur place et savoir quand et combien de temps réserver le transport]]></notes>
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+            <depend id="27" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="22" uid="ca2dd8c5049e4d9ba3313e4adbe7e761" name="Réservation transport sur place" color="#ff99ff" meeting="false" start="2025-04-09" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrable : Transport de l'hébergement aux activtés et/ou aux points repas]]></notes>
+            <depend id="27" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="28" uid="c2c47ad6e3a24decb8f8f446a629e9c4" name="Récolte des fonds" color="#00ffcc" meeting="false" start="2025-03-31" duration="6" complete="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="27" uid="713a893be4304d01b67427c6ff478abc" name="Réunion de vérification avancement projet" color="#ff3333" meeting="false" start="2025-04-14" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Jalon
+]]></notes>
+            <depend id="33" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="39" uid="0def93f0e3e54238adbc80548f73459e" name="Négociation transport sur place" color="#ff99ff" meeting="false" start="2025-04-04" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : Négocier le transport choisi sur place]]></notes>
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="33" uid="1fd7aeafb0174f1fb3407b6b8a5f74f0" name="Réunion finale présentation voyage" color="#6600cc" meeting="false" start="2025-04-15" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrables : Présenter actvivitées aux participants]]></notes>
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="34" uid="ed379b81c2a941edadd94ed289a30b1a" name="Derniers ajustements" color="#ff3333" meeting="true" start="2025-04-16" duration="0" complete="0" expand="true"/>
+        <task id="24" uid="e5189eb045ec4b2cabd228291aea5f7f" name="Vérification envoie documents" meeting="false" start="2025-04-07" duration="3" complete="0" expand="true"/>
+        <task id="23" uid="6f16af881b684442aeb251ae447285ae" name="Réservation repas" color="#ccffcc" meeting="false" start="2025-04-08" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrable : repas fournis pendant 6 jours (du 15 au 20 mai)]]></notes>
+            <depend id="27" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="35" uid="e1a78880f8374175aa551af7181ff5eb" name="Négociation Hébergement" color="#ccccff" meeting="false" start="2025-04-04" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : Négocier le prix de l'hébergement choisi]]></notes>
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="37" uid="28b949de66a744ef8a1c3ee7a8c66008" name="Négociation activités" color="#ffffcc" meeting="false" start="2025-04-04" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : négocier les activités prévues]]></notes>
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="38" uid="1d5db63d9bd1440ca19cec34265517ef" name="Négociation repas" color="#ccffcc" meeting="false" start="2025-04-04" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : négocier le prix des repas prévus]]></notes>
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" uid="8a20f28036334c4184642eed972fbbd3" name="Demande des documents nécessaires" meeting="false" start="2025-03-31" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrable : Google Form
+]]></notes>
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" uid="60e30cebc9ad42b98f70b7cc05ad674e" name="Envoie des documents nécessaires" meeting="false" start="2025-04-01" duration="3" complete="0" expand="true"/>
+        <task id="11" uid="e8ed3a86ee2b4ae39c86a3325ee4012d" name="Sélections de l'hébergement" color="#ccccff" meeting="false" start="2025-04-01" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : un ou plusieurs hébergment(s) à proposer en réunion d'équipe]]></notes>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <depend id="16" type="2" difference="0" hardness="Rubber"/>
+            <depend id="35" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="ce1bba3bcf43405aabcf9f6bc857e216" name="Comparaison prix hébergement" color="#ccccff" meeting="false" start="2025-03-26" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : un ou plusieurs choix d'hébergement]]></notes>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="57ea1795671e4514a0a36080ef12f20b" name="Comparaison prix transport aller-retour" color="#ffccff" meeting="false" start="2025-03-26" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : un ou plusieurs choix de transport
+]]></notes>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" uid="708498a3988740f3beea073a4e6e6905" name="Sélection transport aller-retour" color="#ffccff" meeting="false" start="2025-04-01" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : Un ou plusieurs choix de transport aller-retour pour la réunion d'équipe]]></notes>
+            <depend id="14" type="2" difference="0" hardness="Rubber"/>
+            <depend id="16" type="2" difference="0" hardness="Rubber"/>
+            <depend id="36" type="2" difference="0" hardness="Strong"/>
+            <depend id="39" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="a611faf13275469fa05af754de5dacca" name="Recherche activités" color="#ffffcc" meeting="false" start="2025-03-26" duration="3" complete="0" expand="true">
+            <notes><![CDATA[Livrable : 10 idées f'activités possibles ou plus]]></notes>
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" uid="79759f78dc564d88ac376cee59670cfd" name="Sélection activités" color="#ffffcc" meeting="false" start="2025-03-31" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : 2 activités/jour pour 5 jours et 1 chaque soir en groupe]]></notes>
+            <depend id="16" type="2" difference="0" hardness="Rubber"/>
+            <depend id="37" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" uid="07869263b6124f028695c7716422ee9b" name="Comparaison transports sur place" color="#ff99ff" meeting="false" start="2025-03-28" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Livrable : un ou plusieurs choix de transport sur place]]></notes>
+            <depend id="11" type="2" difference="0" hardness="Rubber"/>
+            <depend id="13" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="14" uid="d66071b33afb4dbbbbb60f2e9c58c5a3" name="Sélection transport sur place" color="#ff99ff" meeting="false" start="2025-04-03" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Livrable : un ou plusieurs choix de transport(s) sur place pour la réunion d'équipe]]></notes>
+            <depend id="16" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="16" uid="f7019d457cf54dba854a5c0f77fd2e80" name="Réunion validation des livrables" color="#ff3333" meeting="true" start="2025-04-04" duration="0" complete="0" expand="true">
+            <notes><![CDATA[Livrables : 
+Hébergement, transport (sur place et aller-retour), repas, activités choisis et validé 
+Vérification du budget
+Mise à jour des documents et informations nécessaires des participants
+]]></notes>
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <depend id="19" type="2" difference="0" hardness="Rubber"/>
+            <depend id="20" type="2" difference="0" hardness="Rubber"/>
+            <depend id="21" type="2" difference="0" hardness="Rubber"/>
+            <depend id="23" type="2" difference="0" hardness="Rubber"/>
+            <depend id="35" type="2" difference="0" hardness="Rubber"/>
+            <depend id="36" type="2" difference="0" hardness="Rubber"/>
+            <depend id="37" type="2" difference="0" hardness="Rubber"/>
+            <depend id="38" type="2" difference="0" hardness="Rubber"/>
+            <depend id="39" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="3" uid="9e7aad97605a470eb7f7b3beeda3ac55" name="Reunion équipe projet" color="#6600ff" meeting="false" start="2025-03-25" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Répartssion des missions
+Définition du budget]]></notes>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Chef d'équipe" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Présidente du club" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Trésorier" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Responsable transport" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="Responsable hébergement" function="Default:0" contacts="" phone=""/>
+        <resource id="5" name="Responsable repas" function="Default:0" contacts="" phone=""/>
+        <resource id="6" name="Membres du club" function="Default:0" contacts="" phone=""/>
+        <resource id="8" name="Responsable activités" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="16" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="24" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="27" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="16" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="24" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="27" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="2" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="33" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="3" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="22" resource-id="3" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="27" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="3" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="39" resource-id="3" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="3" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="4" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="22" resource-id="4" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="27" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="4" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="39" resource-id="4" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="3" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="5" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="27" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="38" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="6" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="18" resource-id="6" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="28" resource-id="6" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="33" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="8" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="8" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="27" resource-id="8" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="8" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="37" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2025-04-14" end="2025-04-28" resourceid="0"/>
+        <vacation start="2025-04-14" end="2025-04-28" resourceid="1"/>
+        <vacation start="2025-04-14" end="2025-04-28" resourceid="2"/>
+        <vacation start="2025-04-14" end="2025-04-28" resourceid="3"/>
+        <vacation start="2025-04-14" end="2025-04-28" resourceid="4"/>
+        <vacation start="2025-04-14" end="2025-04-28" resourceid="5"/>
+        <vacation start="2025-04-14" end="2025-04-28" resourceid="6"/>
+        <vacation start="2025-04-14" end="2025-04-28" resourceid="8"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
